@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-text-dark-desat-blue: hsl(238, 29%, 16%);
+  --hover-soft-red: hsl(14, 88%, 65%);
+  --background-gradient-1: hsl(273, 75%, 66%);
+  --background-gradient-2: hsl(240, 73%, 65%);
+  --devider-color: hsl(240, 5%, 91%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+}
+body {
+  min-height: 100vh;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-gradient-1),
+    var(--background-gradient-2)
+  );
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 3rem 0;
+  text-align: center;
+  color: var(--primary-text-dark-desat-blue);
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0.5em;
+  color: var(--dark-grayish-blue);
+}
+
+.card-img-cube {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 3em;
+  margin: 7rem 1rem 2rem 1rem;
+  min-width: 25rem;
+
+  box-shadow: 19px 20px 20px 0px hsla(0, 0%, 15%, 0.431);
+}
+.card-img {
+  text-align: center;
+  background: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 95%;
+}
+
+.card-img-background {
+  margin: -22% 0 0 -5%;
+}
+
+.faq-accordion {
+  padding: 0 2rem 3rem;
+}
+
+#accordion li {
+  list-style: none;
+}
+
+#accordion button {
+  width: 100%; /* for the bottom border to go till the end*/
+  text-align: left;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--devider-color);
+  color: var(--primary-text-dark-desat-blue);
+}
+button .arrow-svg {
+  float: right;
+}
+
+#accordion button:hover,
+#accordion button:active {
+  color: var(--primary-text-dark-desat-blue);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#accordion button:active .arrow-svg {
+  transform: rotate(180deg);
+  transition-duration: 4s;
+}
+
+/* it sets the height of the content divs to 0 (hiding them from view); 
+and gives the max-height a transition style and speed. 
+this will come in handy when we get to the JavaScript, where we'll change the max-height values 
+for our divs when the buttons are clicked. */
+.acc-item-content {
+  padding: 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
