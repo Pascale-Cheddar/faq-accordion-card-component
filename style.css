@@ -48,7 +48,6 @@ p {
 }
 
 .card {
-  height: 39rem;
   min-width: 25rem;
   display: flex;
   flex-direction: column;
@@ -127,14 +126,14 @@ for our divs when the buttons are clicked. */
   .card {
     display: flex;
     flex-direction: row;
-    height: 60vh;
+
     justify-content: space-between;
   }
 
   .card-img-cube {
     display: inline;
     position: absolute;
-    top: 15rem;
+    top: 14rem;
     left: -5.9rem;
     z-index: 1;
   }
@@ -143,16 +142,13 @@ for our divs when the buttons are clicked. */
     display: none;
   }
   .img-wrapper {
-    max-width: 43vw;
     overflow: hidden;
     background: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-position: 116% 64%;
   }
   .card-img-desktop {
-    display: inline-block;
-    width: auto;
-    height: 69%;
+    display: block;
     transform: translate(-11%, 22%);
     overflow: visible;
   }
