@@ -121,8 +121,8 @@ for our divs when the buttons are clicked. */
   .card {
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
+    margin: 0;
   }
 
   .card-img-cube {
@@ -161,11 +161,11 @@ for our divs when the buttons are clicked. */
     font-size: 0.95rem;
   }
   #accordion .btn {
-    font-size: 1.16rem;
+    font-size: 1rem;
   }
   #accordion .btn:hover,
   #accordion .btn:active {
     color: var(--hover-soft-red);
-    font-size: 1.16rem;
+    font-size: 1.09rem;
   }
 }
