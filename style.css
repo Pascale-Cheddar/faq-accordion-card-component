@@ -106,11 +106,6 @@ button .arrow-svg {
   font-weight: 700;
 }
 
-#accordion button:active .arrow-svg {
-  transform: rotate(180deg);
-  animation-duration: rotate 1s linear infinite;
-}
-
 /* it sets the height of the content divs to 0 (hiding them from view); 
 and gives the max-height a transition style and speed. 
 this will come in handy when we get to the JavaScript, where we'll change the max-height values 
@@ -163,13 +158,14 @@ for our divs when the buttons are clicked. */
     margin: 4rem 0 4rem;
   }
   .acc-item-content p {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   #accordion .btn {
-    font-size: 1rem;
+    font-size: 1.16rem;
   }
   #accordion .btn:hover,
   #accordion .btn:active {
     color: var(--hover-soft-red);
+    font-size: 1.16rem;
   }
 }
