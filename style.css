@@ -48,7 +48,6 @@ p {
 }
 
 .card {
-  min-width: 25rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -74,6 +73,7 @@ p {
 }
 .faq-accordion {
   padding: 0 2rem 3rem;
+  width: 24rem;
 }
 
 #accordion li {
@@ -148,8 +148,8 @@ for our divs when the buttons are clicked. */
     overflow: visible;
   }
   .faq-accordion {
-    padding-right: 5rem;
-    width: 42vw;
+    padding-right: 2rem;
+    width: 27rem;
   }
 
   .faq-title {
