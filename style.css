@@ -99,8 +99,7 @@ button .arrow-svg {
   float: right;
 }
 
-#accordion button:hover,
-#accordion button:active {
+#accordion button:hover {
   color: var(--primary-text-dark-desat-blue);
   font-size: 0.9rem;
   font-weight: 700;
