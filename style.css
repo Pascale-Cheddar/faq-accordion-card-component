@@ -64,7 +64,7 @@ p {
 }
 
 .img-wrapper-mobile {
-  background: url(/images/bg-pattern-mobile.svg);
+  background: url(./images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: 91% 100%;
 
@@ -142,7 +142,7 @@ for our divs when the buttons are clicked. */
   }
   .img-wrapper {
     overflow: hidden;
-    background: url(../images/bg-pattern-desktop.svg);
+    background: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-position: 116% 64%;
   }
