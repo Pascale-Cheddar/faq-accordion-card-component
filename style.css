@@ -72,7 +72,7 @@ p {
   margin: -9rem 26px 3rem 0;
 }
 .faq-accordion {
-  padding: 0 2rem 3rem;
+  padding: 2rem 2rem 3rem;
   width: 24rem;
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -157,16 +157,13 @@ for our divs when the buttons are clicked. */
   }
 
   .faq-title {
-    font-size: 2.6rem;
     text-align: left;
-    margin: 4rem 0 4rem;
+    margin: 4rem 0 2rem;
   }
   .acc-item-content p {
     font-size: 0.95rem;
   }
-  #accordion .btn {
-    font-size: 1rem;
-  }
+
   #accordion .btn:hover,
   #accordion .btn:active {
     color: var(--hover-soft-red);
