@@ -75,7 +75,12 @@ p {
   padding: 0 2rem 3rem;
   width: 24rem;
 }
-
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .faq-accordion {
+    width: 19.5rem;
+    padding: 0 0.5rem 3rem;
+  }
+}
 #accordion li {
   list-style: none;
 }
