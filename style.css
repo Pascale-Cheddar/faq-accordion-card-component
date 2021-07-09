@@ -164,9 +164,8 @@ for our divs when the buttons are clicked. */
     font-size: 0.95rem;
   }
 
-  #accordion .btn:hover,
-  #accordion .btn:active {
+  #accordion .btn:hover {
     color: var(--hover-soft-red);
-    font-size: 1.09rem;
+    font-size: 0.9rem;
   }
 }
